@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+/* App.css */
+/* Appliquez la couleur de fond noire à l'ensemble de la page */
+html, body, #root {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.m-1 {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 20px;
+  border: 1px solid #17a2b8;
+  background-color: #f8f9fa;
 }
 
-.App-link {
-  color: #61dafb;
+.nav.nav-pills {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav.nav-pills li {
+  margin-right: 10px;
+}
+
+/* Styles pour les liens actifs dans la navigation */
+.nav.nav-pills li .btn.btn-outline-info.active {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.sidenav__logo {
+  width: 50px; /* Ajustez la largeur du logo selon vos besoins */
+  height: auto;
 }
